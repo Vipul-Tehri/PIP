@@ -38,13 +38,13 @@
 
         let video = document.getElementById('videoElement');
         video.addEventListener('enterpictureinpicture', function (event) {
-            console.log('Entered PiP');
+            alert('Entered PiP');
             pipWindow = event.pictureInPictureWindow;
-            console.log(`Window size -  \n Width: ${pipWindow.width} \n Height: ${pipWindow.height}`); // get the width and height of PiP window
+            alert(`Window size -  \n Width: ${pipWindow.width} \n Height: ${pipWindow.height}`); // get the width and height of PiP window
         });
 
         video.addEventListener('leavepictureinpicture', function (event) {
-            console.log('Left PiP');
+            alert('Left PiP');
             togglePipButton.disabled = false;
         });
 
